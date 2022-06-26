@@ -17,3 +17,6 @@
 
 # Ansible install
 - https://www.simplilearn.com/tutorials/ansible-tutorial/ansible-installation
+
+# Docker compose install
+- https://docs.docker.com/engine/install/centos/
