@@ -18,13 +18,28 @@
           - vim
           - mlocate
           - wget
-
-
-
+          
     - name: Configurar zona horaria
       timezone:
         name: America/Montevideo
 
+    - name: Docker Install
+      yum:
+        name:
+          - docker
+          - docker-compose
+          
+    - name: Docker Start
+      systemd:
+        state: started
+        name: docker
+        enabled: yes
+        
+become: true
+become_user: root
+          
 
-  become: true
-  become_user: root
+    
+
+
+ 
