@@ -12,7 +12,7 @@
 - firewall-cmd --add-service=ssh --permanent
 - firewall-cmd --reload
 - firewall-cmd --list-all
-- systemctl enable ssh.service
+- systemctl enable sshd.service
 - systemctl start sshd.service
 
 # Ansible install
