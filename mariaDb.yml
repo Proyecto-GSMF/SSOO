@@ -1,0 +1,19 @@
+---
+- hosts: ServidoresMySQL
+  tasks:
+
+    - name: Instalar MariaDB
+      yum:
+        name:
+          - mariadb-server
+
+
+    - name: Iniciar MariaDB
+      systemd:
+        state: started
+        name: mysqld
+        enabled: yes
+
+
+  become: true
+  become_user: root
