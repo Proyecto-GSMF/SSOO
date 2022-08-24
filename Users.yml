@@ -1,0 +1,19 @@
+---
+- hosts: all
+  tasks:
+
+    - name: Crear Usuario 1
+      user: 
+        name: usuario1
+        comment: Usuario 1
+        group: wheel  # Grupo que habilita sudo
+        # Password hasheado del usuario
+        password: " " # Password hasheada del usuario
+   
+    - name: Agregar clave para Usuario 1
+      authorized_key:
+        user: usuario1 # Usuario a agregar la clave publica
+        state: present # Especificar que la clave exista
+        # Clave publica a copiar al servidor para el usuario "usuario1"
+        key: "ssh-rsa "
+
