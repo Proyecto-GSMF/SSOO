@@ -22,7 +22,7 @@
     - name: Restringir usuarios de SSH
       ansible.builtin.lineinfile:
         path: /etc/ssh/sshd_configh
-        line: AllowUsers Usuario 
+        line: AllowUsers usuario1
         create: yes
 
     - name: Reiniciar SSH
