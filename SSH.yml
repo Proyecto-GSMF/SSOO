@@ -10,19 +10,19 @@
     - name: Desactivar Root en SSH
       ansible.builtin.lineinfile:
         path: /etc/ssh/sshd_config
-        regexp: '#PermitRootLogin\ yes'
+        regexp: '^#PermitRootLogin\ yes'
         line: PermitRootLogin no
 
     - name: Desactivar Passwords en SSH
       ansible.builtin.lineinfile:
         path: /etc/ssh/sshd_config
-        regexp: 'PasswordAuthentication\ yes'
+        regexp: '^PasswordAuthentication\ yes'
         line: PasswordAuthentication no
 
     - name: Restringir usuarios de SSH
       ansible.builtin.lineinfile:
         path: /etc/ssh/sshd_configh
-        line: AllowUsers el.kevin 
+        line: AllowUsers Usuario 
         create: yes
 
     - name: Reiniciar SSH
