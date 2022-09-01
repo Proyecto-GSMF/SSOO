@@ -1,5 +1,5 @@
 ---
-- hosts: ServidoresMySQL
+- hosts: ServidoresDocker
   tasks:
 
     - name: Instalar MariaDB
