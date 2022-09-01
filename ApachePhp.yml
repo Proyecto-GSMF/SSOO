@@ -1,5 +1,5 @@
 ---
-- hosts: ServidoresWeb 
+- hosts: ServidoresDocker 
   tasks:
 
     - name: Instalar apache y php
