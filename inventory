@@ -1,2 +1,2 @@
 [ServidoresDocker]
-10.0.0.10 ansible_ssh_user="root" ansible_ssh_pass="esi-buceo-root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+10.0.0.15 ansible_ssh_user="root" ansible_ssh_pass="esi-buceo-root" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
