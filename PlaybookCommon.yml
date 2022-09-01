@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: ServidoresDocker
   tasks:
 
     - name: Setear Hostname
