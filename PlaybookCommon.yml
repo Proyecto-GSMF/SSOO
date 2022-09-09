@@ -1,7 +1,6 @@
 ---
-- hosts: ServidoresDocker
+- hosts: all
   tasks:
-
     - name: Setear Hostname
       hostname: name={{ inventory_hostname }}
 
@@ -9,7 +8,6 @@
       yum:
         name:
           - https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-
 
     - name: Instalar paquetes comunes
       yum:
