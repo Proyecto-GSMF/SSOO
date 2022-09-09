@@ -20,7 +20,7 @@
     - name: Configurar zona horaria
       timezone:
         name: America/Montevideo
-
+        
     - name: Docker Install
       yum:
         name:
