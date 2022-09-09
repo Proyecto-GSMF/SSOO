@@ -1,5 +1,5 @@
 ---
-- hosts: ServidoresDocker
+- hosts: all
   tasks:
     - name: Cambiar puerto de SSH
       ansible.builtin.lineinfile:
