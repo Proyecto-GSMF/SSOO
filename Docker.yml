@@ -1,5 +1,5 @@
 ---
-- hosts: ServidoresDocker
+- hosts: ServidorApp
   tasks:
 
     - name: Instalar Docker
@@ -7,13 +7,11 @@
         name:
           - docker
 
-
     - name: Iniciar Docker
       systemd:
         state: started
         name: docker
         enabled: yes
-
 
   become: true
   become_user: root
