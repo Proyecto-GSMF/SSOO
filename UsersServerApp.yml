@@ -1,5 +1,5 @@
 ---
-- hosts: ServidoresDocker
+- hosts: ServerApp
   tasks:
 
     - name: Crear Usuario 1
