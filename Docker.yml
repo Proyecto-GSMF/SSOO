@@ -1,5 +1,5 @@
 ---
-- hosts: ServidorApp
+- hosts: ServerApp
   tasks:
 
     - name: Instalar Docker
