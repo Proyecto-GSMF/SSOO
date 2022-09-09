@@ -27,11 +27,11 @@ section: mysql57-community
 option: gpgcheck
 value: 0
 	  
-  - name:  blank for now
-    yum:
-      name: 
-        - mysql 
-        - mysql-community-server
+- name:  blank for now
+yum:
+name: 
+- mysql 
+- mysql-community-server
 
-	become: true
-	become_user: root
+become: true
+become_user: root
