@@ -1,17 +1,36 @@
 ---
+- name: Instalar Prerequisitos de ansible en equipo local
+  hosts: localhost
+  tasks: 
+  - community.general.ansible_galaxy_install:
+      type: collection
+      name: community.docker
+
 - hosts: ServerApp
+  become: true
   tasks:
+
+    - name: Instalar yum-utils
+      yum:
+        name: yum-utils
+        state: present
+
+    - name: instalar repo docker
+      command: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
     - name: Instalar Docker
       yum:
-        name:
-          - docker
+        name: docker-ce, docker-ce-cli, containerd.io, docker-compose-plugin
+        state: present
 
     - name: Iniciar Docker
       systemd:
         state: started
         name: docker
         enabled: yes
+        daemon_reload: true
 
-  become: true
-  become_user: root
+
+    - name: crear contenedor
+      community.docker.docker_compose:
+        project_src: .

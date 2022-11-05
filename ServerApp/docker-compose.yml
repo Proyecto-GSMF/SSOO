@@ -1,0 +1,9 @@
+version: '2'
+services: 
+    aplicacion:
+        image: php:7.2-apache
+        container_name: aplicacion-php
+        ports:
+            - "80:80"
+        volumes: 
+            - /opt/aplicacion-php/html:/var/www/html
