@@ -1,11 +1,12 @@
 ---
-- hosts: ServerApp
+- name: Crear usuarios
+  hosts: ServerApp
   tasks:
 
     - name: Crear appAdmin
       user: 
         name: appadmin
-        comment: Admin User
+        comment: App Admin User
         group: wheel
         password: "MIIJKAIBAAKCAgEAoWUWSiuYBRxuPUYPMCc66OBxm/y0Wbwoqm/oAWj9FsmksGq7
                   DB3BugIR4NVLlpP194X1XluyQxrz8CIr9CTwmCtlLNilvfB26PxhJwHdHTnIZvKS
@@ -56,12 +57,12 @@
                   I0cwsltHgKQ/HOj0IBJj57kN/xO9cDL40nshRvA+sRewoPs5TmlZGxXTFcKS0GLC
                   HM7gTZ9uwGm8QqAyCknYjbxNM/6hbzXzyUAIQ9cDo70vcAWvlVJMNwWrEZnIqJ4v
                   60qsJorpx8hL+2M99NqD12Ld2ZCId/mgZO/9As+Qx/aCISy/yvL5rW8VURk="
-                  # Key RSA "Privada" hasheada del usuario appadmin
+                  # Key RSA Privada hasheada del usuario appadmin
    
     - name: Agregar clave para usuario appadmin
       authorized_key:
         user: appadmin # Usuario a agregar la clave publica
         state: present # Especificar que la clave exista
-        # Key RSA publica a copiar al servidor para el usuario admin
+        # Key RSA publica a copiar al servidor para el usuario appadmin
         key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQChZRZKK5gFHG49Rg8wJzro4HGb/LRZvCiqb+gBaP0WyaSwarsMHcG6AhHg1UuWk/X3hfVeW7JDGvPwIiv0JPCYK2Us2KW98Hbo/GEnAd0dOchm8pIlOtvVZ2gAA5SU0oymc69dw/2KgpXNW55JsDTf8L7CQylPzFMqCfwE9HeXOdgdHDdXZy6GWmuxTmkqvma1XLiwua8v7Zu447lHl5Vz4Q5yDKnZqylbjA1kgvI5fwzZ4edCbULdHt+3FLZEhxQA8bBpD/alsLomOqLVW2AUlO6MGQgw2peyCgfGpootNnGRrkMCw66BtalREjXDEInXtM0dDijNZztymSgKuiWah4k7EikN76Nk408xHSzjBKmiqZ6cT6sMe3J9fxdvRLYZlE27UZpXwJWtYE8qwBiPRi88jL3qiYvfy3S55muizpWebvVaxo9oZoLUHfpOet7CIb7YbbWE+3Ptg10YTVgIbiguTbiz8LHDLtHWzK/Tht4I0ltke8Dsa7WVEYWkN7xWp0JH9MwFWhy+a/oGwHFKwnIAq1/mjwHqwkbTwOy3P2Rm6cUMNxamaQTcaDbRLVmi8kMmgaKxHDxMWAEPnemGiR7rLLMwHsapDk1aodC/0m6i2Rs3mKaA82yzk6gaVZkdBdlx7TzghAN9E7g+pesqVPMrrrkZ0DPlsPT135EH6w== root@app.gsmf.local"
 
