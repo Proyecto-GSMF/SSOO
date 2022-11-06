@@ -3,6 +3,7 @@
   become: true
   hosts: all
   tasks:
+    
     - name: Setear Hostname
       hostname: name={{ inventory_hostname }}
 
@@ -50,7 +51,10 @@
         name: firewalld
         enabled: False
        
-    
+    - include_tasks: /Proyecto-GSMF/Ansible/Tasks/ssh.yml
+    - include_tasks: /Proyecto-GSMF/Ansible/Tasks/Docker.yml
+    - include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersAppAdmin.yml
+    - include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersDbAdmin.yml
 
 
  
