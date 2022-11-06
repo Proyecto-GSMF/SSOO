@@ -1,5 +1,7 @@
 ---
-- hosts: all
+- name: Configuración Gral
+  become: true
+  hosts: all
   tasks:
     - name: Setear Hostname
       hostname: name={{ inventory_hostname }}
@@ -47,11 +49,7 @@
         state: stopped
         name: firewalld
         enabled: False
-        
-become: true
-become_user: root
-          
-
+       
     
 
 
