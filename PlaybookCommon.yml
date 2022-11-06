@@ -58,11 +58,11 @@
     
     - name: Tareas para ServerApp
       include_tasks: /Proyecto-GSMF/Ansible/Tasks/TasksServerApp.yml
-      include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersAppAdmin.yml
+      include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersServerApp.yml
   
     - name: Tareas para ServerDB:
       include_tasks: /Proyecto-GSMF/Ansible/Tasks/TasksServerDB.yml
-      include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersDbAdmin.yml
+      include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersServerBD.yml
 
 
  
