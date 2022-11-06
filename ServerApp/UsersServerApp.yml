@@ -15,5 +15,5 @@
         user: usuario1 # Usuario a agregar la clave publica
         state: present # Especificar que la clave exista
         # Clave publica a copiar al servidor para el usuario "usuario1"
-        key: "ssh-rsa "
+        key: "ssh-rsa"
 
