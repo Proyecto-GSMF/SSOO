@@ -1,2 +1,8 @@
-- name: Changing perm of "/foo/bar.sh", adding "+x"
-  file: dest=/foo/bar.sh mode=a+x
+---
+- name: Configuración ServerBD
+  become: true
+  hosts: ServerBD
+  tasks:
+  
+  - name: Cambiar permisos de "/Proyecto-GSMF/Ansible/Tasks/MySqlDump.sh", adding "+x"
+    file: dest=/Proyecto-GSMF/Ansible/Tasks/MySqlDump.sh mode=a+x
