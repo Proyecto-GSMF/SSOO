@@ -1,5 +1,5 @@
 ---
-- name: instalar base de datos
+- name: Instalar Base de Datos
   become: true
   hosts: ServerBD
   tasks:
@@ -8,33 +8,33 @@
     yum:
       name: https://dev.mysql.com/get/mysql80-community-release-el7-6.noarch.rpm
 
-  - name: Desactivar sub-repo MySQL 8.0
+  - name: Desactivar Sub-Repo - MySQL 8.0
     ini_file:
       dest: /etc/yum.repos.d/mysql-community.repo
       section: mysql80-community
       option: enabled
       value: 0
 
-  - name: MySQL 5.7 Community Server
+  - name: Elegir Release Series - MySQL 5.7 Community Server
     ini_file:
       dest: /etc/yum.repos.d/mysql-community.repo
       section: mysql57-community
       option: enabled
       value: 1
 
-  - name: MySQL 5.7 CS - No checkear firma GPG
+  - name: No checkear firma GPG - MySQL 5.7 CS 
     ini_file:
       dest: /etc/yum.repos.d/mysql-community.repo
       section: mysql57-community
       option: gpgcheck
       value: 0
       
-  - name: Instalar MYSQL
+  - name: Instalar MySQL
     package:
       name: mysql-server
       state: present
 
-  - name: Encender MYSQL
+  - name: Iniciar MySQL
     systemd:
       name: mysqld
       state: started
