@@ -19,6 +19,7 @@
           - vim
           - mlocate
           - wget
+          - pbzip2
           
     - name: Configurar zona horaria
       timezone:
