@@ -1,6 +1,6 @@
 ---
 - name: Instalar Pre-requisitos de Ansible en Equipo Local
-  hosts: localhost
+  hosts: ServerApp
   tasks: 
   - community.general.ansible_galaxy_install:
       type: collection
