@@ -52,10 +52,17 @@
         name: firewalld
         enabled: False
        
-    - include_tasks: /Proyecto-GSMF/Ansible/Tasks/ssh.yml
-    - include_tasks: /Proyecto-GSMF/Ansible/Tasks/Docker.yml
-    - include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersAppAdmin.yml
-    - include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersDbAdmin.yml
+       
+    - name: Tareas Generales 
+      include_tasks: /Proyecto-GSMF/Ansible/Tasks/ssh.yml
+    
+    - name: Tareas para ServerApp
+      include_tasks: /Proyecto-GSMF/Ansible/Tasks/TasksServerApp.yml
+      include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersAppAdmin.yml
+  
+    - name: Tareas para ServerDB:
+      include_tasks: /Proyecto-GSMF/Ansible/Tasks/TasksServerDB.yml
+      include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersDbAdmin.yml
 
 
  
