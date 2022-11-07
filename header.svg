@@ -45,11 +45,11 @@
 					margin: 0;
 					width: 100%;
 					height: 200px;
-					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
+					background: linear-gradient(-45deg, #da1e28, #e7dfdd, #22bfd1);
 					background-size: 600% 400%;
 					animation: gradientBackground 10s ease infinite;
 					border-radius: 10px;
-					color: #d0e0b16;
+					color: #E7DFDD;
 					text-align: center;
 				}
 
@@ -59,10 +59,10 @@
 					letter-spacing: 5px;
 					text-transform: uppercase;
 					text-shadow:
-						0 1px 0 #DA1E28,
-						0 2px 0 #DA1E28,
-						0 3px 0 #DA1E28,
-						0 4px 0 #DA1E28,
+						0 1px 0 #0E0B16,
+						0 2px 0 #0E0B16,
+						0 3px 0 #0E0B16,
+						0 4px 0 #0E0B16,
 						0 12px 5px rgba(0, 0, 0, 0.1);
 					animation: rotate ease-in-out 1s infinite alternate;
 				}
