@@ -1,9 +1,22 @@
-> [!abstract] >## ¡Bienvenid@!
-> Este es mi blog de cocina, en el encontrarás información teórica, técnicas, curiosidades, recetas, y más; todo relacionado con el mundo culinario.
->>> ![[Inicio.jpg]]
-<center>
-  ![alt text](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png)
-</center>
+<div align="center">
+	<br>
+	<a href="https://github.com/sindresorhus/css-in-readme-like-wat/blame/main/header.svg">
+		<img src="header.svg" width="800" height="400" alt="Click to see the source">
+	</a>
+	<br>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
+ ![alt text](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png)
+
 # Ejemplo Ansible
 
 - Crear 4 VM de Linux
