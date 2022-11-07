@@ -1,7 +1,7 @@
 <div align="center">
 	<br>
 	<a>
-		<img src="header.svg" width="800" height="200" alt="Portada GSMF">
+		<img src="Proyecto-GSMF/Ansible/GSMF/header.svg" width="800" height="200" alt="Portada GSMF">
 	</a>
 	<br>
 	<br>
