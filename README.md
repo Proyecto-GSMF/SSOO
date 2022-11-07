@@ -7,10 +7,10 @@
 <br>
 <br>
 
-	<a href="https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf">
-		<img src="header.svg" width="800" height="200" alt="Click para ver el Documento Integrador">
+	<a ![Documento Integrador]([https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf))>
+	
 Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
- ![alt text](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png)
+ ![Documento Integrador]([https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf))
 
 # Ejemplo Ansible
 
