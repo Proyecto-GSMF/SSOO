@@ -49,7 +49,7 @@
 					background-size: 600% 400%;
 					animation: gradientBackground 10s ease infinite;
 					border-radius: 10px;
-					color: #da1e28;
+					color: #d0e0b16;
 					text-align: center;
 				}
 
@@ -59,10 +59,10 @@
 					letter-spacing: 5px;
 					text-transform: uppercase;
 					text-shadow:
-						0 1px 0 #efefef,
-						0 2px 0 #efefef,
-						0 3px 0 #efefef,
-						0 4px 0 #efefef,
+						0 1px 0 #DA1E28,
+						0 2px 0 #DA1E28,
+						0 3px 0 #DA1E28,
+						0 4px 0 #DA1E28,
 						0 12px 5px rgba(0, 0, 0, 0.1);
 					animation: rotate ease-in-out 1s infinite alternate;
 				}
