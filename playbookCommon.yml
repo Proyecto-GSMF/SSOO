@@ -61,7 +61,6 @@
       include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersServerApp.yml
   
     - name: Tareas para ServerDB:
-      include_tasks: /Proyecto-GSMF/Ansible/Tasks/MySQL.yml
       include_tasks: /Proyecto-GSMF/Ansible/Tasks/TasksServerDB.yml
       include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersServerBD.yml
 
