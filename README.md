@@ -4,11 +4,12 @@
 		<img src="header.svg" width="800" height="200" alt="Click para ver el Documento Integrador">
 	</a>
 	<br>
+	![Documento Integrador]([https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf))
 </div>
 <br>
 <br>
 
-![Documento Integrador]([https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf))
+
 
 # Ejemplo Ansible
 
