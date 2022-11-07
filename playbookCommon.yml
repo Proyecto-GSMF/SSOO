@@ -19,7 +19,7 @@
           - vim
           - mlocate
           - wget
-          - pbzip2
+          - pbzip2 #Multi-threaded compression
           
     - name: Configurar zona horaria
       timezone:
