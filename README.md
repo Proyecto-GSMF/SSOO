@@ -1,15 +1,16 @@
 <div align="center">
 	<br>
 	<a>
-		<img src="header.svg" width="800" height="200" alt="Click para ver el Documento Integrador">
+		<img src="header.svg" width="800" height="200" alt="Portada GSMF">
 	</a>
 	<br>
-	
+	Documento Integrador: 
+	https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png
 </div>
 <br>
 <br>
-Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
- ![alt text](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png)
+
+
 
 
 # Ejemplo Ansible
