@@ -1,1 +1,8 @@
-- include_tasks: /Proyecto-GSMF/Ansible/Tasks/Docker.yml
+---
+- name: Configuración ServerBD
+  become: true
+  hosts: ServerApp
+  tasks:
+  
+- name: Iniciar Tareas Relacionadas A Docker
+  include_tasks: /Proyecto-GSMF/Ansible/Tasks/DockerServerApp.yml
