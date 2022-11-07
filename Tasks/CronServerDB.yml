@@ -4,7 +4,7 @@
   tasks: 
 
     - name: "Cron de mysqldump"
-      ansible.builtin.cron
+      ansible.builtin.cron:
        name: "Ejecutar el .sh mysqldump cada 45 minutos."
        state: present
        minute: "0" #Todas las medianoches del año a las 23:00h
