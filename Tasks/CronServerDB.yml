@@ -1,2 +1,33 @@
 ---
-  -
+- name: Daemons Cron del ServerDB
+  hosts: ServerDB
+  tasks: 
+  
+  - name: Ejecutar el .sh mysqldump cada 45 minutos. 
+  
+  ---
+- hosts: servers
+  vars:
+    olderthan: 1
+    intervals: 45 # needs to run every 2 hours, everyday
+    user: "{{ user }}"
+    scriptpath: /Proyecto-GSMF/Ansible/Tasks/mysqldump.sh
+
+  tasks:
+
+    - name: Copy the file
+      copy:
+        src: "{{ scriptpath }}"
+        dest: "{{ scriptpath }}"
+
+   - name: "The Dummy Pruner"
+     cron:
+      name: "Ejecutar /Ansible/Tasks/mysqldump.sh"
+      user: "{{ user }}"
+      minute: "45"
+      hour: "*"
+      day: "*"
+      weekday: "*"
+      month: "*"
+      job: "sh {{ scriptpath }} >> {{ scriptpath }}/results.log 2>&1"
+      state: present
