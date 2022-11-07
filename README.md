@@ -4,6 +4,8 @@
 		<img src="header.svg" width="800" height="200" alt="Portada GSMF">
 	</a>
 	<br>
+	<br>
+	<br>
 	Documento Integrador: 
 	<br>
 	https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png
