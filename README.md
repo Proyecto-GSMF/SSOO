@@ -7,10 +7,7 @@
 <br>
 <br>
 
-	<a ![Documento Integrador]([https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf))>
-	
-Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
- ![Documento Integrador]([https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf))
+![Documento Integrador]([https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf))
 
 # Ejemplo Ansible
 
