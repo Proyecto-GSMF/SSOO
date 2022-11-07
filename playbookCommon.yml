@@ -64,5 +64,6 @@
       include_tasks: /Proyecto-GSMF/Ansible/Tasks/TasksServerDB.yml
       include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersServerBD.yml
 
-
+    - name: Cambiar permisos de "/Proyecto-GSMF/Ansible/menuBase.sh", adding "+x"
+      file: dest=/Proyecto-GSMF/Ansible/menuBase.sh mode=a+x
  
