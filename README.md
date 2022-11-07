@@ -8,7 +8,8 @@
 </div>
 <br>
 <br>
-![Documento Integrador](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png)
+Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
+ ![alt text](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png)
 
 
 # Ejemplo Ansible
