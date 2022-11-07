@@ -1,7 +1,6 @@
 <div align="center">
 	<br>
-	<a href="ttps://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf">
-		<img src="header.svg" width="800" height="200" alt="Click para ver el Documento Integrador">
+	<a href="https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf">
 	</a>
 	<br>
 </div>
