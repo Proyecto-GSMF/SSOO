@@ -1,3 +1,7 @@
+> [!abstract] >## ¡Bienvenid@!
+> Este es mi blog de cocina, en el encontrarás información teórica, técnicas, curiosidades, recetas, y más; todo relacionado con el mundo culinario.
+>>> ![[Inicio.jpg]]
+
 # Ejemplo Ansible
 
 - Crear 4 VM de Linux
