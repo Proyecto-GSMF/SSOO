@@ -4,11 +4,11 @@
   hosts: all
   tasks:
   
-    - name: Cambiar puerto de SSH
-      ansible.builtin.lineinfile:
-        path: /etc/ssh/sshd_config
-        regexp: '#Port\ 22'
-        line: Port 22222
+    ##- name: Cambiar puerto de SSH
+       ##ansible.builtin.lineinfile:
+         ##path: /etc/ssh/sshd_config
+         ##regexp: '#Port\ 22'
+         ##line: Port 22
 
     - name: Desactivar Root en SSH
       ansible.builtin.lineinfile:
