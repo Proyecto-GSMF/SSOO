@@ -1,19 +1,15 @@
 <div align="center">
 	<br>
-	<a href="https://github.com/sindresorhus/css-in-readme-like-wat/blame/main/header.svg">
-		<img src="header.svg" width="800" height="400" alt="Click to see the source">
+	<a href="ttps://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf">
+		<img src="header.svg" width="800" height="200" alt="Click para ver el Documento Integrador">
 	</a>
 	<br>
 </div>
+<br>
+<br>
 
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+	<a href="https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/DocumentoIntegrador.pdf">
+		<img src="header.svg" width="800" height="200" alt="Click para ver el Documento Integrador">
 Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
  ![alt text](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png)
 
