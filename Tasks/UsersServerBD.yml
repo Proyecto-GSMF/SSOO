@@ -1,7 +1,4 @@
 ---
-- name: Crear usuarios
-  hosts: ServerDB
-  tasks:
 
     - name: Crear dbAdmin
       user: 
