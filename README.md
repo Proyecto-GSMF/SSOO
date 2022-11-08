@@ -7,6 +7,7 @@
 	<br>
 	<br>
 	Documento Integrador: 
+	<a href="https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png">Documento Integrador</a>
 	<br>
 	
 	<br>
