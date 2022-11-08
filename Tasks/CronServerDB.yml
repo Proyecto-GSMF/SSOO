@@ -4,10 +4,10 @@
     hosts: ServerDB
     tasks: 
 
-      - name: Ensure a job that runs at 2 and 5 exists. Creates an entry like "0 5,2 * * ls -alh > /dev/null"
-        ansible.builtin.cron:
-          name: "check dirs"
-          minute: "0"
-          hour: "5,2"
-          job: "ls -alh > /dev/null"
+      - ansible.builtin.cron:
+         name: "Ejecutar el .sh mysqldump cada 45 minutos."
+         state: present
+         minute: "0" #Todas las medianoches del año a las 23:00h
+         hour: "23" #Todas las medianoches del año a las 23:00h
+         job: "mysqldump.sh"
 
