@@ -15,6 +15,7 @@
 <br>
 [Documento Integrador](https://github.com/Proyecto-GSMF/SSOO/blob/main/GSMF/asd.png)
 [Project explanation](GSMF/DocumentoIntegrador.pdf) 
+[Documento Integrador](https://www.youtube.com/watch?v=uvTcd-VlM64)
 
 # Ejemplo Ansible
 
