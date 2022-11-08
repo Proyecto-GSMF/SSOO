@@ -3,6 +3,4 @@
   become: true
   hosts: ServerApp
   tasks:
-  
-  - name: Iniciar Tareas Relacionadas A Docker
-    include_tasks: DockerServerApp.yml
+    - include_tasks: DockerServerApp.yml
