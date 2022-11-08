@@ -1,9 +1,4 @@
 ---
-- name: Instalar Base de Datos
-  become: true
-  hosts: ServerBD
-  tasks:
-
     - name: Instalar repo MySQL
       yum:
         name: https://dev.mysql.com/get/mysql80-community-release-el7-6.noarch.rpm
