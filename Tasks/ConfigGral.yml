@@ -14,8 +14,6 @@
           - mlocate
           - wget
           - pbzip2
-          - docker
-          - docker-compose
           
     - name: Configurar zona horaria
       timezone:
