@@ -18,36 +18,10 @@
           - vim
           - mlocate
           - wget
-          - pbzip2 #Multi-threaded compression
+          - pbzip2
+          - docker
+          - docker-compose
           
     - name: Configurar zona horaria
       timezone:
         name: America/Montevideo
-        
-    - name: Docker Install
-      yum:
-        name:
-          - docker
-          - docker-compose
-          
-    - name: Docker Start
-      systemd:
-        state: started
-        name: docker
-        enabled: yes
-        
-    - name: Desactivar modulo SELinux del arranque 
-      selinux:
-        state: disabled
-        
-    - name: Desactivar modulo SELinux en el momento
-      selinux:
-        policy: targeted
-        state: permissive
-        
-    - name: Apagar Firewalld
-      systemd: 
-        state: stopped
-        name: firewalld
-        enabled: False
-       
