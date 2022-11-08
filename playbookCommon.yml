@@ -3,11 +3,11 @@
   become: true
   hosts: all
   tasks:
-        - include_tasks: Tasks/ConfigGral.yml
-        - include_tasks: Tasks/SSH.yml
-        - include_tasks: Permisos.yml
-        - include_tasks: Tasks/TasksServerApp.yml
-        - include_tasks: Tasks/UsersServerApp.yml
-        - include_tasks: Tasks/TasksServerDB.yml
-        - include_tasks: Tasks/UsersServerBD.yml
+    - include_tasks: Tasks/ConfigGral.yml
+    - include_tasks: Tasks/SSH.yml
+    - include_tasks: Permisos.yml
+    - include_tasks: Tasks/TasksServerApp.yml
+    - include_tasks: Tasks/UsersServerApp.yml
+    - include_tasks: Tasks/TasksServerDB.yml
+    - include_tasks: Tasks/UsersServerBD.yml
 
