@@ -1,4 +1,10 @@
 ---
+    - name: Instalar paquetes comunes
+      yum:
+        name:
+          - docker
+          - docker-compose
+
     - name: Iniciar Docker
       systemd:
         state: started
