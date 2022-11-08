@@ -6,17 +6,12 @@
 	<br>
 	<br>
 	<br>
-	Documento Integrador: 
 	<a href="https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png">Documento Integrador</a>
 	<br>
-	
 	<br>
 </div>
 <br>
 <br>
-[Documento Integrador](https://github.com/Proyecto-GSMF/SSOO/blob/main/GSMF/asd.png)
-[Project explanation](GSMF/DocumentoIntegrador.pdf) 
-[Documento Integrador](https://www.youtube.com/watch?v=uvTcd-VlM64)
 
 # Ejemplo Ansible
 
