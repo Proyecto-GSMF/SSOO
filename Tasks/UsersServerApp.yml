@@ -1,8 +1,4 @@
 ---
-- name: Crear usuarios
-  hosts: ServerApp
-  tasks:
-
     - name: Crear appAdmin
       user: 
         name: appadmin
