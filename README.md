@@ -2,6 +2,7 @@
 	<br>
 	<a>
 		<img src="GSMF/header.svg" width="800" height="200" alt="Portada GSMF">
+		GRUPO GSMF
 	</a>
 	<br>
 	<br>
