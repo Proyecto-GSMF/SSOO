@@ -8,4 +8,4 @@
     file: dest=/Proyecto-GSMF/Ansible/Tasks/MySqlDump.sh mode=a+x
     
   - name: Iniciar Setup MySQL 5.7
-    include_tasks: /Proyecto-GSMF/Ansible/Tasks/MySQL.yml
+    include_tasks: MySQL.yml
