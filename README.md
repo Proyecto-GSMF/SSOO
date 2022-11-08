@@ -8,7 +8,6 @@
 	<br>
 	<br>
 </div>
-<br>
 
 # Ejemplo Ansible
 
