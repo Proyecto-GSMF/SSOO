@@ -54,16 +54,16 @@
        
        
     - name: Tareas Generales 
-      include_tasks: /Proyecto-GSMF/Ansible/Tasks/ssh.yml
+      include_tasks: Tasks/ssh.yml
     
     - name: Tareas para ServerApp
-      include_tasks: /Proyecto-GSMF/Ansible/Tasks/TasksServerApp.yml
-      include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersServerApp.yml
+      include_tasks: Tasks/TasksServerApp.yml
+      include_tasks: Tasks/UsersServerApp.yml
   
     - name: Tareas para ServerDB:
-      include_tasks: /Proyecto-GSMF/Ansible/Tasks/TasksServerDB.yml
-      include_tasks: /Proyecto-GSMF/Ansible/Tasks/UsersServerBD.yml
+      include_tasks: Tasks/TasksServerDB.yml
+      include_tasks: Tasks/UsersServerBD.yml
 
-    - name: Cambiar permisos de "/Proyecto-GSMF/Ansible/menuBase.sh", adding "+x"
-      file: dest=/Proyecto-GSMF/Ansible/menuBase.sh mode=a+x
+    - name: Cambiar permisos de "menuBase.sh", adding "+x"
+      file: dest=menuBase.sh mode=a+x
  
