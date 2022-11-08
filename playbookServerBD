@@ -1,0 +1,7 @@
+---
+- name: Playbook Base
+  become: true
+  hosts: ServerBD
+  tasks:
+    - include_tasks: Tasks/TasksServerDB.yml
+    - include_tasks: Tasks/UsersServerBD.yml
