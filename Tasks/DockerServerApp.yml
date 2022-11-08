@@ -2,7 +2,7 @@
 - name: Instalar Pre-requisitos de Ansible en Equipo Local
   become: true
   hosts: ServerApp
-  tasks: 
+
     - community.general.ansible_galaxy_install:
         type: collection
         name: community.docker
