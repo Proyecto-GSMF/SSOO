@@ -1,6 +1,13 @@
 ---
-- name: Configuración ServerBD
+- name: Configuración ServerApp
   become: true
   hosts: ServerApp
   tasks:
     - include_tasks: DockerServerApp.yml
+    
+    - name: Iniciar Docker
+      systemd:
+        state: started
+        name: docker
+        enabled: yes
+        daemon_reload: true
