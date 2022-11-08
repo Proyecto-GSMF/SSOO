@@ -1,5 +1,4 @@
 ---
-- name: Config Basica SSH
   become: true
   hosts: all
   tasks:
