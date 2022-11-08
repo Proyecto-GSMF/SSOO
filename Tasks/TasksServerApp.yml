@@ -5,4 +5,4 @@
   tasks:
   
   - name: Iniciar Tareas Relacionadas A Docker
-    include_tasks: /Proyecto-GSMF/Ansible/Tasks/DockerServerApp.yml
+    include_tasks: DockerServerApp.yml
