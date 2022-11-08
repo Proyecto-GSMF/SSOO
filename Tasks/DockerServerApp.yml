@@ -2,19 +2,6 @@
     - name: Config Docker ServerApp
       hosts: ServerApp
 
-    - name: Instalar Yum-Utils
-      yum:
-        name: yum-utils
-        state: present
-
-    - name: Instalar Repo Docker
-      command: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-
-    - name: Instalar Docker
-      yum:
-        name: docker-ce, docker-ce-cli, containerd.io, docker-compose-plugin
-        state: present
-
     - name: Iniciar Docker
       systemd:
         state: started
