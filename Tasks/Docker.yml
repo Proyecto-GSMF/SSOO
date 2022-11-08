@@ -1,0 +1,11 @@
+---
+- name: Config Docker
+  become: true
+  hosts: all
+  tasks:
+  
+    - name: Docker Start
+          systemd:
+            state: started
+            name: docker
+            enabled: yes
