@@ -9,5 +9,5 @@
        state: present
        minute: "0" #Todas las medianoches del año a las 23:00h
        hour: "23" #Todas las medianoches del año a las 23:00h
-       job: "/Proyecto-GSMF/Ansible/Tasks/mysqldump.sh"
+       job: "mysqldump.sh"
   
