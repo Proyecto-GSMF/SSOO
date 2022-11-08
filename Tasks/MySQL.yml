@@ -4,39 +4,39 @@
   hosts: ServerBD
   tasks:
 
-  - name: Instalar repo MySQL
-    yum:
-      name: https://dev.mysql.com/get/mysql80-community-release-el7-6.noarch.rpm
+    - name: Instalar repo MySQL
+      yum:
+        name: https://dev.mysql.com/get/mysql80-community-release-el7-6.noarch.rpm
 
-  - name: Desactivar Sub-Repo - MySQL 8.0
-    ini_file:
-      dest: /etc/yum.repos.d/mysql-community.repo
-      section: mysql80-community
-      option: enabled
-      value: 0
+    - name: Desactivar Sub-Repo - MySQL 8.0
+      ini_file:
+        dest: /etc/yum.repos.d/mysql-community.repo
+        section: mysql80-community
+        option: enabled
+        value: 0
 
-  - name: Elegir Release Series - MySQL 5.7 Community Server
-    ini_file:
-      dest: /etc/yum.repos.d/mysql-community.repo
-      section: mysql57-community
-      option: enabled
-      value: 1
+    - name: Elegir Release Series - MySQL 5.7 Community Server
+      ini_file:
+        dest: /etc/yum.repos.d/mysql-community.repo
+        section: mysql57-community
+        option: enabled
+        value: 1
 
-  - name: No checkear firma GPG - MySQL 5.7 CS 
-    ini_file:
-      dest: /etc/yum.repos.d/mysql-community.repo
-      section: mysql57-community
-      option: gpgcheck
-      value: 0
-      
-  - name: Instalar MySQL
-    package:
-      name: mysql-server
-      state: present
+    - name: No checkear firma GPG - MySQL 5.7 CS 
+      ini_file:
+        dest: /etc/yum.repos.d/mysql-community.repo
+        section: mysql57-community
+        option: gpgcheck
+        value: 0
 
-  - name: Iniciar MySQL
-    systemd:
-      name: mysqld
-      state: started
-      enabled: yes
-      daemon_reload: true
+    - name: Instalar MySQL
+      package:
+        name: mysql-server
+        state: present
+
+    - name: Iniciar MySQL
+      systemd:
+        name: mysqld
+        state: started
+        enabled: yes
+        daemon_reload: true
