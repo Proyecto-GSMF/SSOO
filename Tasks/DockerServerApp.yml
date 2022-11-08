@@ -1,6 +1,4 @@
 ---
-      hosts: ServerApp
-
     - name: Iniciar Docker
       systemd:
         state: started
