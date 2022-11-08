@@ -1,5 +1,5 @@
 ---
-- name: Configuración Gral
+- name: Playbook Base
   become: true
   hosts: all
   tasks:
