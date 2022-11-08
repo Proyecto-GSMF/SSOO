@@ -54,7 +54,7 @@
        
        
     - name: Tareas Generales 
-      - include_tasks: Proyecto-GSMF/SSOO/Tasks/ssh.yml
+      - include_tasks: Proyecto-GSMF/SSOO/Tasks/SSH.yml
     
     - name: Tareas para ServerApp
       - include_tasks: Proyecto-GSMF/SSOO/Tasks/TasksServerApp.yml
