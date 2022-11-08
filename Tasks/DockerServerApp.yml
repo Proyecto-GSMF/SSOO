@@ -1,5 +1,4 @@
 ---
-    - name: Config Docker ServerApp
       hosts: ServerApp
 
     - name: Iniciar Docker
