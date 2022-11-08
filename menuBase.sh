@@ -23,7 +23,7 @@ do
     echo "Ejecutar Ansible: playbookServerBD" 
     ansible-playbook -i inventory playbookServerBD.yml ;;
   4)
-    ./Scritps/menuLogs.sh ;;
+    ./Scripts/menuLogs.sh ;;
   5)
     echo "Salir"; 
     break;;
