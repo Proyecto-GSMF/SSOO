@@ -30,7 +30,7 @@
 - Una para MySQL
 - Una para Docker
 
-- Verificar la IP de las VMs con ip a
+- Verificar la IP de las VMs cosn ip a
 - Loguearse por SSH a la VM que vaya a usar Ansible
 - En esa VM ejecutar yum install -y epel-release -y && ysum install ansible -y
 - Clonar el repo a la VM
