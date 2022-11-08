@@ -1,6 +1,81 @@
-version: '2'
+version: '3'
 services: 
-    aplicacion:
+    autenticacion:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: Api de Autenticacion
+        restart: unless-stopped
+        ports:
+            - "1010:80"
+        volumes:
+        - ./src/autenticacion/var/www/html
+        
+    publicidad:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: Api de Publicidad
+        restart: unless-stopped
+        ports:
+            - "2020:80"
+        volumes:
+        - ./src/publicidad/var/www/html
+        
+    resultados:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: Api de Resultados
+        restart: unless-stopped
+        ports:
+            - "3030:80"
+        volumes:
+        - ./src/resultados/var/www/html 
+        
+    backoffice:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: Api de Backoffice
+        restart: unless-stopped
+        ports:
+            - "1010:80"
+        volumes:
+        - ./src/backoffice/var/www/html
+        
+    autenticacion:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: ApiDeAutenticacion
+        restart: unless-stopped
+        ports:
+            - "1010:80"
+        volumes:
+        - ./src/auth/var/www/html
+        
+    autenticacion:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: ApiDeAutenticacion
+        restart: unless-stopped
+        ports:
+            - "1010:80"
+        volumes:
+        - ./src/auth/var/www/html
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         image: php:7.2-apache
         container_name: ServerAppPhp
         ports:
