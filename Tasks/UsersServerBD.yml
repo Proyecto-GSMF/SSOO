@@ -1,5 +1,4 @@
 ---
-
     - name: Crear dbAdmin
       user: 
         name: dbadmin
