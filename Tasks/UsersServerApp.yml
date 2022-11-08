@@ -4,55 +4,7 @@
         name: appadmin
         comment: App Admin User
         group: wheel
-        password: "MIIJKAIBAAKCAgEAoWUWSiuYBRxuPUYPMCc66OBxm/y0Wbwoqm/oAWj9FsmksGq7
-                  DB3BugIR4NVLlpP194X1XluyQxrz8CIr9CTwmCtlLNilvfB26PxhJwHdHTnIZvKS
-                  JTrb1WdoAAOUlNKMpnOvXcP9ioKVzVueSbA03/C+wkMpT8xTKgn8BPR3lznYHRw3
-                  V2cuhlprsU5pKr5mtVy4sLmvL+2buOO5R5eVc+EOcgyp2aspW4wNZILyOX8M2eHn
-                  Qm1C3R7ftxS2RIcUAPGwaQ/2pbC6Jjqi1VtgFJTujBkIMNqXsgoHxqaKLTZxka5D
-                  AsOugbWpURI1wxCJ17TNHQ4ozWc7cpkoCrolmoeJOxIpDe+jZONPMR0s4wSpoqme
-                  nE+rDHtyfX8Xb0S2GZRNu1GaV8CVrWBPKsAYj0YvPIy96omL38t0ueZros6Vnm71
-                  WsaPaGaC1B36TnrewiG+2G21hPtz7YNdGE1YCG4oLk24s/Cxwy7R1syv04beCNJb
-                  ZHvA7Gu1lRGFpDe8VqdCR/TMBVocvmv6BsBxSsJyAKtf5o8B6sJG08Dstz9kZunF
-                  DDcWpmkE3Gg20S1ZovJDJoGisRw8TFgBD53phoke6yyzMB7GqQ5NWqHQv9Juotkb
-                  N5imgPNss5OoGlWZHQXZce084IQDfRO4PqXrKlTzK665GdAz5bD09d+RB+sCAwEA
-                  AQKCAgAD1FUyD1S9Ek6fT5E+sD+alPC9JcLVujwwxxT3K5mNt90bfnzPrckR88ie
-                  0BDKEtqsM9Z9lalmJDaThQwL7/Bxe94bsUxFdHYt0wcvGME5V0yk/K5xCbN7ncd+
-                  8JbO7Sv/KxGHJQZYCf8p7zmTQAYRJjIwg81wIkX64l/DclWAFhRFpIy/mygkcfLK
-                  MzUVmYzwUrHjJ5S7i2S9f1G/HB6ksDtag2hoTMJfdLRApUbADH6ukMie7969RmVC
-                  f9BPUfEskI+B/qn4hnf0PkHs1A00j9AVLObf2d/tjoVetkbjCb6qGTtnzmLOmxPY
-                  Y5k49qR+pMCVJufa788eSfoEPyRzO4pw+nhOtW4n4THH3QwHnWIE8/5QIwoWx9fy
-                  KA2YIMBXXM2wQ4cKX05R/PCxFfrh1mHIoRe4ih0dQWEy87RcsEQv9t/0jRDUqXZW
-                  VxXD3DURZnoGK9tgE3tiiYDrxByz5JYekx2ehPB07/fKx9KRuXZl7Kdrs7hkMhAX
-                  lTcWCXxQxkEmM8FJ6vK1jZH07zhAs7aBpkctCQGgHBCzcOCBS7zu4dlnTwxf6Ott
-                  LocR6D78LRvWzoppDaOSWFLQqVo9WoGFuCgqH0tFiOl3UPYM3Ny/NVeiigR0dSb/
-                  oSgLq1e9GAX3D1RWkMb2L0DVmMdZxlnW1wYeCDtvfgvXgbyv8QKCAQEA1BqbJ5Al
-                  xmIf+gnrkWREWNc0RCl9szu+/4CiZgBfKgNOSdWdQI2fDUcB4HaVL+dgX4wB2iaK
-                  ZzIxIHRfb5XcWTBId1b1ub7kAdQnkmWeXYy2otOcmdphSodtE1y4ZCBWcW5Dfn/B
-                  g99ngFnzWwG7ABLe15hmZXZz9ic+w2OEi34OMxRs9G/LWwDsRJxo33HBGNkz+aFV
-                  coPuhO+03kpKyOeJ53GHVNMTr2/hMP7czq1aOT7G38w8nER5QD288LdaZZSktMbl
-                  g7znlx9bvHPKDQ1gm/5vl+DQ8R0NwPrJScWRoO+HwToxf1zYYl/EP85bg292zcE8
-                  3KEDQw2+NW/kMwKCAQEAwsvicQ2ZrPtAFEuEoLWUESE72k0XzZ89XIue1/AEB4Yp
-                  GzZBGObffwFo8ibxpUUiLlBrHof1+ZQ62gLEqqRSSnKiBCTT172hJ8TufhBVkoyN
-                  oO1ujaIwOfwjcJWmXgcg5n/Gt3vY0MGWDim7Air1yMpG8iTjjvMQ1P6CNfy2DPzh
-                  y5w/RufjCGOujDM5QsH6mr7vIzQPrpM0GaWQ4P8/JkZu6ESC/57JASQHPcMo/90c
-                  F61MTtQNbuiEQJCeiyJAbiNYIv4wruS9+mPKzW5wmXznrWqBmTiFbziiq2JGHd5W
-                  lksIalb922gXE0wn0XXIHiGONpU9iChqAVta9vrVaQKCAQEAqTPEXE5Q5C55JeVu
-                  B+E96MVcy5dx0F60Im1CoC5hvElA1gPT26Bepp/jrmXK45knt3EgNSATvvk6WZKc
-                  Y47gZkHvPUyg4BmZGKBfJRltuWE8fS5kuhONE4BvkkegTTfC3eBBdZODE6lPjwOy
-                  8AG0ZP2oycKoxP42ycJK/mHQZdschsEfnevlBOb6lE1WGBJOIX18SgLbAGyhBWmY
-                  FtCbUiPrTjex5wgvpv+QXJ6kFTgTRqF+0x/BpkO1mnrl0/3g3jIzJoeYpnw3H8aD
-                  TxXrtHfcfvT9nuJYrFAqHa2yj+hNIV6UJKBAxkKR2ABftSrwtCxiUQd7fuHvkTlQ
-                  aJ6nIwKCAQApdHBFNOq+aF3Ts9qOxPW0y4jMRVnKdZf+aOwt8jM5UrDOzLX/0apA
-                  ghFOb0E/tb23c3/IaJDNQ2Fe4fXuhrfIhiq6jQfUQtPX/c3vYBSF8ol1dPHxDFIN
-                  FP6JyB82pXe39ftZMu8KRhhj/TeCF5hk2b9NatJOqqWrXlphmN05WFvJFABXW6Py
-                  NhyAU6pc7aEia33C1SJ9OXB+AMEbUNakk5qorWPfeHA4YO11lGHWSbzfwQ6bO/97
-                  2dnDT8OdwnVJuxXXpJbBsYZIkhIns9gcofs/6YmZDPFAoSHlLS3Uz2tH4sHwt4Cg
-                  v78haTSUG+exmdyE+y+0GT2t+j4aj3j5AoIBAAEXeCAO9DjPiiKEPx1pkHLFd45+
-                  y+9h/P9MYMLlGptyuYJo15KLdwpENvw88aR7cy96xsUhmjnIjh0OtN290gy2AtpS
-                  qHK6Fi5ycDExRX6T7JIjfjl5M6Qt94LkiLqbAfErF7vkeN1ddlGdBDEr8aaNP5nl
-                  I0cwsltHgKQ/HOj0IBJj57kN/xO9cDL40nshRvA+sRewoPs5TmlZGxXTFcKS0GLC
-                  HM7gTZ9uwGm8QqAyCknYjbxNM/6hbzXzyUAIQ9cDo70vcAWvlVJMNwWrEZnIqJ4v
-                  60qsJorpx8hL+2M99NqD12Ld2ZCId/mgZO/9As+Qx/aCISy/yvL5rW8VURk="
+        password: ""
                   # Key RSA Privada hasheada del usuario appadmin
    
     - name: Agregar clave para usuario appadmin
@@ -60,5 +12,5 @@
         user: appadmin # Usuario a agregar la clave publica
         state: present # Especificar que la clave exista
         # Key RSA publica a copiar al servidor para el usuario appadmin
-        key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQChZRZKK5gFHG49Rg8wJzro4HGb/LRZvCiqb+gBaP0WyaSwarsMHcG6AhHg1UuWk/X3hfVeW7JDGvPwIiv0JPCYK2Us2KW98Hbo/GEnAd0dOchm8pIlOtvVZ2gAA5SU0oymc69dw/2KgpXNW55JsDTf8L7CQylPzFMqCfwE9HeXOdgdHDdXZy6GWmuxTmkqvma1XLiwua8v7Zu447lHl5Vz4Q5yDKnZqylbjA1kgvI5fwzZ4edCbULdHt+3FLZEhxQA8bBpD/alsLomOqLVW2AUlO6MGQgw2peyCgfGpootNnGRrkMCw66BtalREjXDEInXtM0dDijNZztymSgKuiWah4k7EikN76Nk408xHSzjBKmiqZ6cT6sMe3J9fxdvRLYZlE27UZpXwJWtYE8qwBiPRi88jL3qiYvfy3S55muizpWebvVaxo9oZoLUHfpOet7CIb7YbbWE+3Ptg10YTVgIbiguTbiz8LHDLtHWzK/Tht4I0ltke8Dsa7WVEYWkN7xWp0JH9MwFWhy+a/oGwHFKwnIAq1/mjwHqwkbTwOy3P2Rm6cUMNxamaQTcaDbRLVmi8kMmgaKxHDxMWAEPnemGiR7rLLMwHsapDk1aodC/0m6i2Rs3mKaA82yzk6gaVZkdBdlx7TzghAN9E7g+pesqVPMrrrkZ0DPlsPT135EH6w== root@app.gsmf.local"
+        key: ""
 
