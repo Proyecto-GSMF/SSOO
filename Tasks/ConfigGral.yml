@@ -1,9 +1,5 @@
 ---
-- name: ConfigGral
-  become: true
-  hosts: all
-  tasks:
-    
+
     - name: Setear Hostname
       hostname: name={{ inventory_hostname }}
 
