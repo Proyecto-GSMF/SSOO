@@ -1,8 +1,4 @@
 ---
-  become: true
-  hosts: all
-  tasks:
-  
     ##- name: Cambiar puerto de SSH
        ##ansible.builtin.lineinfile:
          ##path: /etc/ssh/sshd_config
