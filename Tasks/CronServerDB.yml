@@ -1,13 +1,8 @@
 ---
-  - name: Daemons Cron del ServerDB
-    become: true
-    hosts: ServerDB
-    tasks: 
-
-      - ansible.builtin.cron:
-         name: "Ejecutar el .sh mysqldump cada 45 minutos."
-         state: present
-         minute: "0" #Todas las medianoches del año a las 23:00h
-         hour: "23" #Todas las medianoches del año a las 23:00h
-         job: "mysqldump.sh"
+    - ansible.builtin.cron:
+       name: "Ejecutar el .sh mysqldump cada 45 minutos."
+       state: present
+       minute: "0" #Todas las medianoches del año a las 23:00h
+       hour: "23" #Todas las medianoches del año a las 23:00h
+       job: "mysqldump.sh"
 
