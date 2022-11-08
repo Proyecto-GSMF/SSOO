@@ -2,13 +2,9 @@
 - name: Instalar Pre-requisitos de Ansible en Equipo Local
   hosts: ServerApp
   tasks: 
-  - community.general.ansible_galaxy_install:
-      type: collection
-      name: community.docker
-
-- hosts: ServerApp
-  become: true
-  tasks:
+    - community.general.ansible_galaxy_install:
+        type: collection
+        name: community.docker
 
     - name: Instalar Yum-Utils
       yum:
