@@ -1,9 +1,4 @@
----
-- name: Config Firewall
-  become: true
-  hosts: all
-  tasks:
-    
+--- 
     - name: Desactivar modulo SELinux del arranque 
       selinux:
         state: disabled
