@@ -1,8 +1,3 @@
 ---
-- name: Configuracion de Permisos
-  become: true
-  hosts: ServerBD
-  tasks:
-  
     - name: Cambiar permisos de "menuBase.sh", adding "+x"
         file: dest=menuBase.sh mode=a+x
