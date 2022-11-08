@@ -13,8 +13,8 @@
 </div>
 <br>
 <br>
-[Documento Integrador](https://github.com/Proyecto-GSMF/Ansible/blob/main/GSMF/asd.png)
-
+[Documento Integrador](https://github.com/Proyecto-GSMF/SSOO/blob/main/GSMF/asd.png)
+[Project explanation](GSMF/DocumentoIntegrador.pdf) 
 
 # Ejemplo Ansible
 
