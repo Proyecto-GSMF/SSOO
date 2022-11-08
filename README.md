@@ -9,9 +9,6 @@
 	<br>
 	<br>
 </div>
-<br>
-<br>
-
 # Ejemplo Ansible
 
 - Crear 4 VM de Linux
