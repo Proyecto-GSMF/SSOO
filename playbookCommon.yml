@@ -3,67 +3,19 @@
   become: true
   hosts: all
   tasks:
-    
-    - name: Setear Hostname
-      hostname: name={{ inventory_hostname }}
 
-    - name: Instalar repositorio epel
-      yum:
-        name:
-          - https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-
-    - name: Instalar paquetes comunes
-      yum:
-        name:
-          - git
-          - vim
-          - mlocate
-          - wget
-          - pbzip2 #Multi-threaded compression
-          
-    - name: Configurar zona horaria
-      timezone:
-        name: America/Montevideo
-        
-    - name: Docker Install
-      yum:
-        name:
-          - docker
-          - docker-compose
-          
-    - name: Docker Start
-      systemd:
-        state: started
-        name: docker
-        enabled: yes
-        
-    - name: Desactivar modulo SELinux del arranque 
-      selinux:
-        state: disabled
-        
-    - name: Desactivar modulo SELinux en el momento
-      selinux:
-        policy: targeted
-        state: permissive
-        
-    - name: Apagar Firewalld
-      systemd: 
-        state: stopped
-        name: firewalld
-        enabled: False
-       
-       
     - name: Tareas Generales 
+        - include_tasks: ConfigGral.yml
         - include_tasks: Tasks/SSH.yml
+        
+    - name: Permisos
+        - include_tasks: Permisos.yml
     
     - name: Tareas para ServerApp
         - include_tasks: Tasks/TasksServerApp.yml
         - include_tasks: Tasks/UsersServerApp.yml
   
     - name: Tareas para ServerDB:
-        - include_tasks: /SSOO/Tasks/TasksServerDB.yml
-        - include_tasks: /SSOO/Tasks/UsersServerBD.yml
+        - include_tasks: Tasks/TasksServerDB.yml
+        - include_tasks: Tasks/UsersServerBD.yml
 
-    - name: Cambiar permisos de "menuBase.sh", adding "+x"
-      file: dest=menuBase.sh mode=a+x
- 
