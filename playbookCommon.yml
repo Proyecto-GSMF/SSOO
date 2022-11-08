@@ -7,7 +7,6 @@
     - include_tasks: Tasks/SSH.yml
     - include_tasks: Tasks/Permisos.yml
     - include_tasks: Tasks/Firewall.yml
-    - include_tasks: Tasks/Docker.yml
     - include_tasks: Tasks/TasksServerApp.yml
     - include_tasks: Tasks/UsersServerApp.yml
     - include_tasks: Tasks/TasksServerDB.yml
