@@ -1,10 +1,11 @@
 #!/bin/bash
 opc=0
-function menu (){
-  echo "Opcion 1"
-  echo "Opcion 2"
-  echo "Opcion 3"
-  echo "Opcion 4"
+function menuBase ()
+{
+  echo "1 - Ejecutar Ansible: playbookCommon"
+  echo "2 - Ejecutar Ansible: playbookServerApp"
+  echo "3 - Ejecutar Ansible: playbookServerBD"
+  echo "4 - Logs"
 }
 
 while [$opc -le 5]
@@ -13,12 +14,17 @@ do
   read opc
   case $opc in
   1)
-    echo "Opcion 1";;
+    echo "Ejecutar Ansible: playbookCommon" 
+    ansible-playbook -i inventory playbookCommon.yml ;;
   2)
-    echo "Opcion 2";;
+    echo "Ejecutar Ansible: playbookServerApp" 
+    ansible-playbook -i inventory playbookServerApp.yml ;;
   3)
-    echo "Opcion 3";;
+    echo "Ejecutar Ansible: playbookServerBD" 
+    ansible-playbook -i inventory playbookServerBD.yml ;;
   4)
+    ./menuLogs.sh ;;
+  5)
     echo "Salir"; 
     break;;
   *)
@@ -28,5 +34,3 @@ done
 ~
 ~
 
-https://stackify.com/linux-logs/#:~:text=Linux%20logs%20will%20display%20with,view%20everything%20under%20the%20syslog.
-https://www.cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
