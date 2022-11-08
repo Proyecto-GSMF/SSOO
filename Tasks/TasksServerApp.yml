@@ -1,7 +1,5 @@
 ---
-  hosts: ServerApp
-    - include_tasks: DockerServerApp.yml
-    
+
     - name: Iniciar Docker
       systemd:
         state: started
