@@ -4,8 +4,8 @@
   hosts: all
   tasks:
 
-    - name: Tareas Generales 
-        - include_tasks: ConfigGral.yml
+
+        - include_tasks: Tasks/ConfigGral.yml
         - include_tasks: Tasks/SSH.yml
         
     - name: Permisos
