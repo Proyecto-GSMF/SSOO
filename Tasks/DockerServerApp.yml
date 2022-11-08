@@ -2,6 +2,7 @@
 - name: Config Docker ServerApp
   become: true
   hosts: ServerApp
+  tasks:
 
     - community.general.ansible_galaxy_install:
         type: collection
