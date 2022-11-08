@@ -1,9 +1,4 @@
 ---
-- name: Configuración ServerBD
-  become: true
-  hosts: ServerBD
-  tasks:
-  
     - include_tasks: MySQL.yml
 
     
