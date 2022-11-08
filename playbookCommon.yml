@@ -5,7 +5,7 @@
   tasks:
     - include_tasks: Tasks/ConfigGral.yml
     - include_tasks: Tasks/SSH.yml
-    - include_tasks: Permisos.yml
+    - include_tasks: Tasks/Permisos.yml
     - include_tasks: Tasks/TasksServerApp.yml
     - include_tasks: Tasks/UsersServerApp.yml
     - include_tasks: Tasks/TasksServerDB.yml
