@@ -54,15 +54,15 @@
        
        
     - name: Tareas Generales 
-      - include_tasks: Proyecto-GSMF/SSOO/Tasks/SSH.yml
+      - include_tasks: SSOO/Tasks/SSH.yml
     
     - name: Tareas para ServerApp
-      - include_tasks: Proyecto-GSMF/SSOO/Tasks/TasksServerApp.yml
-      - include_tasks: Proyecto-GSMF/SSOO/Tasks/UsersServerApp.yml
+      - include_tasks: SSOO/Tasks/TasksServerApp.yml
+      - include_tasks: SSOO/Tasks/UsersServerApp.yml
   
     - name: Tareas para ServerDB:
-      - include_tasks: Proyecto-GSMF/SSOO/Tasks/TasksServerDB.yml
-      - include_tasks: Proyecto-GSMF/SSOO/Tasks/UsersServerBD.yml
+      - include_tasks: SSOO/Tasks/TasksServerDB.yml
+      - include_tasks: SSOO/Tasks/UsersServerBD.yml
 
     - name: Cambiar permisos de "menuBase.sh", adding "+x"
       file: dest=menuBase.sh mode=a+x
