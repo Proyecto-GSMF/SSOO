@@ -4,7 +4,6 @@
   hosts: ServerBD
   tasks:
   
-    - name: Cambiar permisos de "/SSOO/Tasks/MySqlDump.sh", adding "+x"
-          file: dest=/SSOO/Tasks/MySqlDump.sh mode=a+x
-
     - include_tasks: MySQL.yml
+
+    
