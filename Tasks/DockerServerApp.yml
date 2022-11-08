@@ -1,5 +1,5 @@
 ---
-- name: Instalar Pre-requisitos de Ansible en Equipo Local
+- name: Config Docker ServerApp
   become: true
   hosts: ServerApp
 
