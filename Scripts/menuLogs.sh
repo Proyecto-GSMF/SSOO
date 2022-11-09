@@ -2,13 +2,37 @@
 opc=0
 function menuLogs ()
 {
-  echo "¿Que desea hacer?"
-  echo "1 - Consultar Logs de Autenticacion"
-  echo "2 - Consultar Logs de Booteo"
-  echo "3 - Consultar Logs de Cron"
-  echo "4 - Consultar Logs de MySQL"
-  echo "5 - Volver a menu Base"
-  echo "6 - Salir"
+  echo -e "\n$(tput setaf 6)¿Que desea hacer?$(tput sgr 0)"
+  echo -e "1 - Consultar Logs de Autenticacion"
+  echo -e "2 - Consultar Logs de Booteo"
+  echo -e "3 - Consultar Logs de Cron"
+  echo -e "4 - Consultar Logs de MySQL"
+  echo -e "$(tput setaf 3)5 - Volver a menu Base$(tput sgr 0)"
+  echo -e "$(tput setaf 1)6 - Salir$(tput sgr 0)"
+}
+
+#Opcion 1
+function logsAutenticacion(){
+  echo -e "\n$(tput setaf 6)Logs de Autenticacion...$(tput sgr 0)" 
+  less /var/log/auth.log ;;
+}
+
+#Opcion 2
+function logsBooteo(){
+  echo -e "\n$(tput setaf 6)Logs de Booteo...$(tput sgr 0)"
+  less /var/log/boot.log ;;
+}
+
+#Opcion 3
+function logsCron(){
+  echo -e "\n$(tput setaf 6)Logs de Cron ...$(tput sgr 0)" 
+  less /var/log/cron ;;
+}
+
+#Opcion 4
+function logsMySQL(){
+  echo -e "\n$(tput setaf 6)Logs de MySQL ...$(tput sgr 0)" 
+  less /var/log/mysql.log ;;
 }
 
 while [$opc -le 6]
@@ -17,24 +41,19 @@ do
   read opc
   case $opc in
   1)
-    echo "Logs de Autenticacion..." 
-    less /var/log/auth.log ;;
+    logsAutenticacion;;
   2)
-    echo "Logs de Booteo..."
-    less /var/log/boot.log ;;
+    logsBooteo;;
   3)
-    echo "Logs de Cron ..." 
-    less /var/log/cron ;;
+    logsCron;;
   4)
-    echo "Abriendo script menuLogs.sh ..."
-    ./Scripts/menuLogs.sh ;;
+    logsMySQL;;
   5)
-    echo "Volviendo a Menu Principal ..."
     ../menuPrincipal.sh ;;
   6)
-    echo "Saliendo del script menuLogs.sh ..."
+    echo -e "\n$(tput setaf 1)Saliendo del script menuLogs.sh ...$(tput sgr 0)"
     break;;
   *)
-    echo "Opcion Incorrecta";;
+    echo -e "\n$(tput setaf 1) Opcion Incorrecta $(tput sgr 0)";;
   esac
 done
