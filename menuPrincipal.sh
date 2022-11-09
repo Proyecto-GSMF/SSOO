@@ -3,7 +3,7 @@ opc=0
 
 function menuPrincipal ()
 {
-  echo -e "\n$(tput setaf 6)¿Que desea hacer?$(tput sgr 0)"
+  echo -e "\n$(tput setaf 5)¿Que desea hacer?$(tput sgr 0)"
   echo "1 - Ejecutar Ansible: playbookCommon"
   echo "2 - Ejecutar Ansible: playbookServerApp"
   echo "3 - Ejecutar Ansible: playbookServerBD"
