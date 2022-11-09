@@ -1,5 +1,6 @@
 #!/bin/bash
 opc=0
+
 function menuLogs ()
 {
   echo -e "\n$(tput setaf 6)¿Que desea hacer?$(tput sgr 0)"
@@ -7,7 +8,7 @@ function menuLogs ()
   echo "2 - Consultar Logs de Booteo"
   echo "3 - Consultar Logs de Cron"
   echo "4 - Consultar Logs de MySQL"
-  echo -e "$(tput setaf 3)5 - Volver a menu Base$(tput sgr 0)"
+  echo -e "$(tput setaf 3)5 - Volver al Menu Principal$(tput sgr 0)"
   echo -e "$(tput setaf 1)6 - Salir$(tput sgr 0)"
 }
 
@@ -41,13 +42,13 @@ do
   read opc
   case $opc in
   1)
-    logsAutenticacion;;
+    logsAutenticacion ;;
   2)
-    logsBooteo;;
+    logsBooteo ;;
   3)
-    logsCron;;
+    logsCron ;;
   4)
-    logsMySQL;;
+    logsMySQL ;;
   5)
     ../menuPrincipal.sh ;;
   6)
