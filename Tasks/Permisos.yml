@@ -1,6 +1,6 @@
 ---
-    - name: Cambiar permisos de "../menuBase.sh", adding "+x"
-        file: dest=../menuBase.sh mode=a+x
+    - name: Cambiar permisos de "../menuPrincipal.sh", adding "+x"
+        file: dest=../menuPrincipal.sh mode=a+x
         
     - name: Cambiar permisos de "../Scripts/menuLogs.sh", adding "+x"
         file: dest=../Scripts/menuLogs.sh mode=a+x        
