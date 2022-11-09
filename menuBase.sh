@@ -2,6 +2,7 @@
 opc=0
 function menuBase ()
 {
+  echo "¿Que desea hacer?"
   echo "1 - Ejecutar Ansible: playbookCommon"
   echo "2 - Ejecutar Ansible: playbookServerApp"
   echo "3 - Ejecutar Ansible: playbookServerBD"
@@ -15,15 +16,16 @@ do
   read opc
   case $opc in
   1)
-    echo "Ejecutar Ansible: playbookCommon" 
+    echo "Ejecutando Ansible: playbookCommon ..." 
     ansible-playbook -i inventory playbookCommon.yml ;;
   2)
-    echo "Ejecutar Ansible: playbookServerApp" 
+    echo "Ejecutando Ansible: playbookServerApp ..." 
     ansible-playbook -i inventory playbookServerApp.yml ;;
   3)
-    echo "Ejecutar Ansible: playbookServerBD" 
+    echo "Ejecutando Ansible: playbookServerBD ..." 
     ansible-playbook -i inventory playbookServerBD.yml ;;
   4)
+    echo "Abriendo script menuLogs.sh ..."
     ./Scripts/menuLogs.sh ;;
   5)
     echo "Saliendo del script menuBase.sh ..."
