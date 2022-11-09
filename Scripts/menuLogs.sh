@@ -11,7 +11,7 @@ function menuLogs ()
   echo "6 - Salir"
 }
 
-while [$opc -le 5]
+while [$opc -le 6]
 do
   menu
   read opc
