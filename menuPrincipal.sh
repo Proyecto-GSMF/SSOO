@@ -1,6 +1,6 @@
 #!/bin/bash
 opc=0
-function menuBase ()
+function menuPrincipal ()
 {
   echo "¿Que desea hacer?"
   echo "1 - Ejecutar Ansible: playbookCommon"
@@ -28,7 +28,7 @@ do
     echo "Abriendo script menuLogs.sh ..."
     ./Scripts/menuLogs.sh ;;
   5)
-    echo "Saliendo del script menuBase.sh ..."
+    echo "Saliendo del script menuPrincipal.sh ..."
     break;;
   *)
     echo "Opcion Incorrecta";;
