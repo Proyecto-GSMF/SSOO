@@ -3,11 +3,12 @@ opc=0
 function menuLogs ()
 {
   echo "¿Que desea hacer?"
-  echo "1 - Ejecutar Ansible: playbookCommon"
-  echo "2 - Ejecutar Ansible: playbookServerApp"
-  echo "3 - Ejecutar Ansible: playbookServerBD"
-  echo "4 - Menu Logs"
-  echo "5 - Salir"
+  echo "1 - Consultar Logs de Autenticacion"
+  echo "2 - Consultar Logs de Booteo"
+  echo "3 - Consultar Logs de Cron"
+  echo "4 - Consultar Logs de MySQL"
+  echo "5 - Volver a menu Base"
+  echo "6 - Salir"
 }
 
 while [$opc -le 5]
@@ -16,19 +17,22 @@ do
   read opc
   case $opc in
   1)
-    echo "Ejecutando Ansible: playbookCommon ..." 
-    ansible-playbook -i inventory playbookCommon.yml ;;
+    echo "Logs de Autenticacion..." 
+    less /var/log/auth.log ;;
   2)
-    echo "Ejecutando Ansible: playbookServerApp ..." 
-    ansible-playbook -i inventory playbookServerApp.yml ;;
+    echo "Logs de Booteo..."
+    less /var/log/boot.log ;;
   3)
-    echo "Ejecutando Ansible: playbookServerBD ..." 
-    ansible-playbook -i inventory playbookServerBD.yml ;;
+    echo "Logs de Cron ..." 
+    less /var/log/cron ;;
   4)
     echo "Abriendo script menuLogs.sh ..."
     ./Scripts/menuLogs.sh ;;
   5)
-    echo "Saliendo del script menuBase.sh ..."
+    echo "Volviendo a Menu Principal ..."
+    ../menuPrincipal.sh ;;
+  6)
+    echo "Saliendo del script menuLogs.sh ..."
     break;;
   *)
     echo "Opcion Incorrecta";;
