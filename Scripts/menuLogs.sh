@@ -3,10 +3,10 @@ opc=0
 function menuLogs ()
 {
   echo -e "\n$(tput setaf 6)¿Que desea hacer?$(tput sgr 0)"
-  echo -e "1 - Consultar Logs de Autenticacion"
-  echo -e "2 - Consultar Logs de Booteo"
-  echo -e "3 - Consultar Logs de Cron"
-  echo -e "4 - Consultar Logs de MySQL"
+  echo "1 - Consultar Logs de Autenticacion"
+  echo "2 - Consultar Logs de Booteo"
+  echo "3 - Consultar Logs de Cron"
+  echo "4 - Consultar Logs de MySQL"
   echo -e "$(tput setaf 3)5 - Volver a menu Base$(tput sgr 0)"
   echo -e "$(tput setaf 1)6 - Salir$(tput sgr 0)"
 }
