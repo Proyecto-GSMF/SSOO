@@ -33,3 +33,36 @@
 - ansible-playbook -i inventario mariadb.yml
 - ansible-playbook -i inventario docker
 
+## GIT
+
+0 - tus archivos
+git status
+
+1 - stage 
+git add .
+
+2 - commit 
+git commit -m "aca le pones algo"
+
+3 - push
+git push
+
+4 - traer cambios
+git pull
+
+# confianza entre equipos
+ssh-keygen -b 4096 -t rsa
+
+ssh-copy-id root@192.168.119.128
+
+ssh-copy-id root@192.168.119.131
+
+# cambiar el nombre
+
+vim /etc/hostname
+
+servidor.gsmf.local
+
+
+# comando ansible
+ansible-playbook carpeta/playbook.yml
