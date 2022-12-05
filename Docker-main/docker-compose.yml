@@ -1,0 +1,13 @@
+version: '3'
+services:
+  autenticacion:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: ApiDeAutenticacion
+    restart: unless-stopped
+    ports:
+      - "1010:80"
+    volumes:
+    - ./src/Pagina:/var/www/html
+
